@@ -42,21 +42,17 @@ function getPoints(dados, repositorio) {
         let stars = repositorio[i].stargazers_count;
         countStar += stars;
     }
-    var pontosRepos = dados.public_repos * 20;
-    console.log(pontosRepos)
+    var pontosRepos = dados.public_repos * 20
     var pontosSeguidores = dados.followers * 10;
     var pontosSeguindo = dados.following * 5;
     var pontosGists = dados.public_gists * 5;
     var bio = dados.bio;
-    var countBio = bio.length
-    console.log(countBio)
-    var total = pontosRepos + pontosSeguidores + pontosSeguindo + countStar + pontosGists + countBio;
-    console.log('total', total)
-    return escreve(pontosRepos, pontosSeguidores, pontosSeguindo, countStar, pontosGists, countBio, total, bio)
+    var total = pontosRepos + pontosSeguidores + pontosSeguindo + countStar + pontosGists;
+    return escreve(pontosRepos, pontosSeguidores, pontosSeguindo, countStar, pontosGists, bio, total)
 }
 
 
-function escreve(pontosRepos, pontosSeguidores, pontosSeguindo, countStar, pontosGists, countBio, total, bio) {
+function escreve(pontosRepos, pontosSeguidores, pontosSeguindo, countStar, pontosGists, bio, total) {
     document.getElementById('public-repos1').innerHTML = pontosRepos;
     document.getElementById('seguidores1').innerHTML = pontosSeguidores;
     document.getElementById('seguindo1').innerHTML = pontosSeguindo;
@@ -66,7 +62,7 @@ function escreve(pontosRepos, pontosSeguidores, pontosSeguindo, countStar, ponto
         document.getElementById('bio1').innerHTML = 0;
     }
     else {
-        document.getElementById('bio1').innerHTML = countBio;
+        document.getElementById('bio1').innerHTML = bio.length;
     }
     document.getElementById('total1').innerHTML = total
 }
