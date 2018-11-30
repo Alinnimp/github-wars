@@ -1,32 +1,43 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Github Wars</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700" rel="stylesheet">
-  </head>
-  <body>
+</head>
+
+<body>
     <main>
         <section id="container">
-                <p>Compare perfis do github e veja quem</br>ganha essa batalha!</p></br>
+            <p>Compare perfis do github e veja quem</br>ganha essa batalha!</p></br>
             <div class="logo">
-                <img src="img/logo.png" alt="logo_git" >
+                <img src="img/logo.png" alt="logo_git">
             </div>
             <h1>WARS</h1>
             <div class="user-game">
-                <input id="user1" type="text" placeholder="Nome usuário GitHub">
-                <img src="img/sword.png" alt="espadas" width="65px" height="65px">
-                <input id="user2" type="text" placeholder="Nome usuário GitHub">
+                    <input type="text" placeholder="Nome usuário GitHub" id="usuario1">
+                    <img src="img/sword.png" alt="espadas" width="65px" height="65px">
+                    <input type="text" placeholder="Nome usuário GitHub" id="usuario2">
             </div>
             <div class="btn-play">
-                <button id="fight-button" onclick="mostrarVencedor()" class="btn"><a href="result.html" class="link-btn">Fight!</a></button>
+                <button class="btn" id="start">Fight!</button>
             </div>
 
         </section>
     </main>
-    <script src="data.js"></script>
-    <script src="app.js"></script
-  </body>
+    <script>
+        var btn = document.getElementById('start');
+        btn.addEventListener('click', function () {
+            var user1 = document.getElementById('usuario1').value;
+            var user2 = document.getElementById('usuario2').value;
+
+            window.location.href = 'result.html?user1=' + user1 + '&user2=' + user2;
+        });
+    </script>
+</body>
+
 </html>
