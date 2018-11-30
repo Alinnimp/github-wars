@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1>GitHub Wars</h1>
-    </header>
-    <div class="">
-      <input id="usuario-1" type="text" name="Usuario-1" value="">
-      <input id="usuario-2" type="text" name="Usuario-2" value="">
-      <button id="fight-button" onclick="mostrarVencedor()" type="button" name="button">Fight</button>
-    </div>
-    <div id="result">
+    <main>
+        <section id="container">
+                <p>Compare perfis do github e veja quem</br>ganha essa batalha!</p></br>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo_git" >
+            </div>
+            <h1>WARS</h1>
+            <div class="user-game">
+                <input id="user1" type="text" placeholder="Nome usuário GitHub">
+                <img src="img/sword.png" alt="espadas" width="65px" height="65px">
+                <input id="user2" type="text" placeholder="Nome usuário GitHub">
+            </div>
+            <div class="btn-play">
+                <button id="fight-button" onclick="mostrarVencedor()" class="btn"><a href="result.html" class="link-btn">Fight!</a></button>
+            </div>
 
-
-    </div>
-
+        </section>
+    </main>
     <script src="data.js"></script>
-    <script src="app.js"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="app.js"></script
   </body>
 </html>
