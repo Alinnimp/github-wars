@@ -1,109 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Github Wars</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700" rel="stylesheet">
-  </head>
-  <body>
+</head>
+
+<body>
     <main>
         <section id="container">
-                <p><strong>'Nome'</strong> ganhou essa batalha!</p></br>
+            <p><strong>'Nome'</strong> ganhou essa batalha!</p></br>
             <div class="user-game">
                 <div class="result-user01">
                     <div>
-                            <img src="img/user.jpg" alt="user_01" class="img_users">
+                        <img src="img/user.jpg" alt="user_01" class="img_users" id="img_user1">
                     </div>
-                    <h2> <img src="img/award.png" alt="winner" width="30px" height="30px"> Nome do usuário 01</h2>
+                    <h2 id="jogador1"> <img src="img/award.png" alt="winner" width="30px" height="30px"> Nome do usuário 01</h2>
                     <div>
-                    <table>
-                        <tr>
-                            <th>Critérios</th>
-                            <th>Qtd.</th>
-                            <th>Total</th>
-                        </tr>
-                        <tr>
-                            <td>Repositórios publicos</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Seguidores</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Seguindo</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Estrelas em repositório</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Gists</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Critério extra</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                    </table>
-                </div>
+                        <table>
+                            <tr>
+                                <th>Critérios</th>
+                                <th>Qtd.</th>
+                            </tr>
+                            <tr>
+                                <td>Repositórios publicos</td>
+                                <td id="public-repos1">0</td>
+                            </tr>
+                            <tr>
+                                <td>Seguidores</td>
+                                <td id="seguidores1">0</td>
+                            </tr>
+                            <tr>
+                                <td>Seguindo</td>
+                                <td id="seguindo1">0</td>
+                            </tr>
+                            <tr>
+                                <td>Estrelas em repositório</td>
+                                <td id="estrelas1">0</td>
+                            </tr>
+                            <tr>
+                                <td>Gists</td>
+                                <td id="gists1">0</td>
+                            </tr>
+                            <tr>
+                                <td>Caracteres na Bio</td>
+                                <td id="bio1">0</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td id="total1">0</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
 
-                <img src="img/sword.png" alt="logo_git" width="90px" height="90px" class="sword">
+                <img src="img/sword.png" alt="logo_git" width="65px" height="65px" class="sword">
                 <div class="result-user02">
                     <div>
-                        <img src="img/user.jpg" alt="user_02" class="img_users">
+                        <img src="img/user.jpg" alt="user_02" class="img_users" id="img_user2">
                     </div>
-                    <h2>Nome do usuário 02</h2>
-                       <div>
+                    <h2 id="jogador2">Nome do usuário 02</h2>
+                    <div>
                         <table>
-                                <tr>
-                                    <th>Critérios</th>
-                                    <th>Qtd.</th>
-                                    <th>Total</th>
-                                </tr>
-                                <tr>
-                                    <td>Repositórios publicos</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>Seguidores</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>Seguindo</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>Estrelas em repositório</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>Gists</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>Critério extra</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                </tr>
-                            </table>
-                        </div>
+                            <tr>
+                                <th>Critérios</th>
+                                <th>Qtd.</th>
+                            </tr>
+                            <tr>
+                                <td>Repositórios publicos</td>
+                                <td id="public-repos2">0</td>
+                            </tr>
+                            <tr>
+                                <td>Seguidores</td>
+                                <td id="seguiredores2">0</td>
+                            </tr>
+                            <tr>
+                                <td>Seguindo</td>
+                                <td id="seguindo2">0</td>
+                            </tr>
+                            <tr>
+                                <td>Estrelas em repositório</td>
+                                <td id="estrelas2">0</td>
+                            </tr>
+                            <tr>
+                                <td>Gists</td>
+                                <td id="gists2">0</td>
+                            </tr>
+                            <tr>
+                                <td>Caracteres na Bio</td>
+                                <td id="bio2">0</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td id="total2">0</td>
+                            </tr>
+                        </table>
                     </div>
+                </div>
             </div>
             <div class="btn-play">
                 <button class="btn"><a href="index.html" class="link-btn">Nova Batalha</a></button>
@@ -112,5 +108,6 @@
         </section>
     </main>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
