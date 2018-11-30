@@ -1,14 +1,8 @@
-.titulo {
-    font-family: 'Teko', sans-serif;
-}
-
-.texto {
-
-}
-
 body {
     background: url("../img/background.jpg") no-repeat #21242B;
     background-size: cover;
+    color:#fff;
+    font-family: 'Teko', sans-serif;
 }
 
 .logo img {
@@ -98,3 +92,41 @@ input {
  ::-ms-input-placeholder { /* Microsoft Edge */
     color: #bdbdbd;
  }
+
+a {
+    color:#fff;
+    text-decoration: none;
+}
+
+
+/* pagina de resultados */
+
+ .img_users {
+    width: 150px;
+    height: 150px;
+ }
+
+ .sword {
+     margin-top: 50px;
+ }
+
+ table, td, tr {
+    border: 1px solid #ff7816;
+    font-size: 20px;
+}
+
+td {
+    padding: 5px 20px 5px 20px;
+}
+ 
+.result-user01 {
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.result-user02{
+    display:flex;
+    flex-direction: column; 
+   align-items: center;
+}
